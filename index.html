@@ -5,15 +5,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo&family=Cormorant+Garamond:ital@1&family=Croissant+One&family=EB+Garamond&family=Fraunces:wght@100&family=Hind&family=Inria+Serif&family=Inter&family=Lexend+Deca&family=Lobster&family=Luxurious+Roman&family=Marck+Script&family=MedievalSharp&family=Merriweather&family=Noto+Serif+JP&family=Open+Sans&family=Outfit&family=Playfair+Display+SC&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300&family=Quicksand&family=Roboto&family=Sacramento&family=Sedgwick+Ave&family=Source+Serif+Pro&family=Special+Elite&family=Tenor+Sans&family=The+Nautigal:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon-32x32.png">
+
     <title>Huddle</title>
     <style>
-
-        *{
+        * {
             margin: 0;
             padding: 0;
             text-decoration: none;
             color: white;
             cursor: default;
+            font-family: Open Sans;
         }
 
         :root {
@@ -25,37 +33,46 @@
             background: url("./images/bg-desktop.svg") var(--violet) no-repeat right;
             background-size: cover;
         }
-        #Logo{
+
+        #Logo {
             padding: 3rem;
             height: 3rem;
         }
-        main{
+
+        main {
             display: flex;
             justify-content: space-between;
             font-size: 1.4rem;
         }
-        #Image{
+
+        #Image {
             width: 60vw;
         }
-        #ImageBox{
+
+        #ImageBox {
             padding-left: 3rem;
             margin-right: 2.5rem;
         }
-        #TextBox{
+
+        #TextBox {
             padding-top: 2.8rem;
         }
-        #Heading{
+
+        #Heading {
+            font-family: Poppins;
             line-height: 2.5rem;
             letter-spacing: 1.2px;
             margin-bottom: 2rem;
         }
-        #Para{
+
+        #Para {
             padding-right: 1rem;
             font-size: 1rem;
             letter-spacing: 1px;
             margin-bottom: 2rem;
         }
-        button{
+
+        button {
             font-size: 1.1rem;
             padding: 0.8rem 2.5rem;
             border-style: none;
@@ -64,37 +81,44 @@
             cursor: pointer;
             box-shadow: 3px 3px 3px var(--soft-magenta);
         }
-        button:hover{
+
+        button:hover {
             background-color: var(--soft-magenta);
         }
-        #Social{
+
+        #Social {
             text-align: right;
             padding: 2rem 5rem;
         }
-        .SocialLogo{
+
+        .SocialLogo {
             height: 2rem;
             border-radius: 100%;
         }
-        .SocialLogo:hover{
+
+        .SocialLogo:hover {
             background-color: var(--soft-magenta);
             cursor: pointer;
         }
 
-        @media  screen and (max-width: 970px) {
-            main{
+        @media screen and (max-width: 970px) {
+            main {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 font-size: 1rem;
             }
-            #Image{
+
+            #Image {
                 width: 90vw;
             }
-            .adjust{
+
+            .adjust {
                 padding: 1rem;
                 text-align: center;
             }
-            #Social{
+
+            #Social {
                 text-align: center;
                 height: 1.3rem;
                 padding: 1rem 0px;
@@ -124,7 +148,7 @@
                 <p id="Para" class="adjust">Huddle re-imagines the way we build communities. You have a voice, but so
                     does your audience. Create connections with your users as you engage in genuine discussion. </p>
 
-             <p class="adjust"><button >Register</button></p>
+                <p class="adjust"><button>Register</button></p>
             </div>
 
         </main>
@@ -135,7 +159,8 @@
                 <p id="Social">
                     <img src="images/fb.svg" alt="" class="SocialLogo">
                     <img src="images/twitter.svg" alt="" class="SocialLogo">
-                    <img src="images/insta.svg" alt="" class="SocialLogo"></p>
+                    <img src="images/insta.svg" alt="" class="SocialLogo">
+                </p>
             </div>
 
         </footer>
