@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huddle</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: white;
+            cursor: default;
+        }
+
+        :root {
+            --violet: hsl(257, 40%, 49%);
+            --soft-magenta: hsl(300, 69%, 71%);
+        }
+
+        #Holder {
+            background: url("./images/bg-desktop.svg") var(--violet) no-repeat right;
+            background-size: cover;
+        }
+        #Logo{
+            padding: 3rem;
+            height: 3rem;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.4rem;
+        }
+        #Image{
+            width: 60vw;
+        }
+        #ImageBox{
+            padding-left: 3rem;
+            margin-right: 2.5rem;
+        }
+        #TextBox{
+            padding-top: 2.8rem;
+        }
+        #Heading{
+            line-height: 2.5rem;
+            letter-spacing: 1.2px;
+            margin-bottom: 2rem;
+        }
+        #Para{
+            padding-right: 1rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+        }
+        button{
+            font-size: 1.1rem;
+            padding: 0.8rem 2.5rem;
+            border-style: none;
+            border-radius: 30px;
+            color: var(--violet);
+            cursor: pointer;
+            box-shadow: 3px 3px 3px var(--soft-magenta);
+        }
+        button:hover{
+            background-color: var(--soft-magenta);
+        }
+        #Social{
+            text-align: right;
+            padding: 2rem 5rem;
+        }
+        .SocialLogo{
+            height: 2rem;
+            border-radius: 100%;
+        }
+        .SocialLogo:hover{
+            background-color: var(--soft-magenta);
+            cursor: pointer;
+        }
+
+        @media  screen and (max-width: 970px) {
+            main{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+            }
+            #Image{
+                width: 90vw;
+            }
+            .adjust{
+                padding: 1rem;
+                text-align: center;
+            }
+            #Social{
+                text-align: center;
+                height: 1.3rem;
+                padding: 1rem 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="Holder">
+        <header>
+
+            <img src="images/logo.svg" alt="" id="Logo" />
+
+        </header>
+
+        <main>
+
+            <div id="ImageBox">
+                <img src="images/illustration-mockups.svg" alt="" id="Image">
+            </div>
+
+            <div id="TextBox">
+
+                <h1 id="Heading" class="adjust">Build The Community <br> Your Fans Will Love</h1>
+
+                <p id="Para" class="adjust">Huddle re-imagines the way we build communities. You have a voice, but so
+                    does your audience. Create connections with your users as you engage in genuine discussion. </p>
+
+             <p class="adjust"><button >Register</button></p>
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div id="SocialMedia">
+                <p id="Social">
+                    <img src="images/fb.svg" alt="" class="SocialLogo">
+                    <img src="images/twitter.svg" alt="" class="SocialLogo">
+                    <img src="images/insta.svg" alt="" class="SocialLogo"></p>
+            </div>
+
+        </footer>
+
+    </section>
+</body>
+
+</html>
